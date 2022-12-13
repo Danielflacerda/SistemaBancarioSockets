@@ -1,4 +1,4 @@
-# SmartBank
+# BancoSocketiano
 
 ## Objetivos
 

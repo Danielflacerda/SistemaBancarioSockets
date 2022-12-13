@@ -48,7 +48,7 @@ color: rgb(247, 248, 250);</string>
      </font>
     </property>
     <property name="text">
-     <string>SmartBank</string>
+     <string>BancoSocketiano</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
