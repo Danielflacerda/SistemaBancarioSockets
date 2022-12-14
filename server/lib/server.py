@@ -78,8 +78,8 @@ class Server(StoppableThread):
 	
 	def run(self):
 		'''Cria e configura o servidor para aceitar as conexões dos clientes e
-		passar a execução delas para uma nova thread processar as requisições.
-		'''
+		passar a execução delas para uma nova thread processar as requisições
+		através do uso de sockets'''
 		try:
 			self._server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			self._server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -91,7 +91,7 @@ class Server(StoppableThread):
 			print(f'=> Address already in use. Retrying in {interval} seconds...\n')
 			time.sleep(interval)
 			self.run()
-	
+		'''Checando se o socket em questão está em uso ou disponível.'''
 		while self._stop_event.is_set() == False:
 			try:
 				client_socket, client_address = self._server_socket.accept()
@@ -120,7 +120,8 @@ class Server(StoppableThread):
 
 class SocketHandler(StoppableThread):
 	'''Classe responsável por tratar as requisições do clientes e injetar os
-	dados recebidos e a função de resposta para serem processadas pelo controlador.
+	dados recebidos e a função de resposta para serem processadas pelo controlador
+	através do uso de sockets para multithread.
 	Cada instância gera uma nova thread no servidor.
 
 	Methods
