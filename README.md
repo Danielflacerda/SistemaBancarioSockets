@@ -1,17 +1,23 @@
 # BancoSocket
 
-## Objetivos
+## Descrição do Projeto
+Este sistema é uma aplicação simples em Python com lado Cliente-Servidor, onde 
+foi criado um simples front para manuseio do sistema, cuja comunicação com o 
+back utiliza de sockets em sua comunicação afim de operar bem com multithreading
+das múltiplas transações financeiras de um sistema bancário real.
+
+## Objetivos da atividade
 Praticar aspectos básicos de comunicação entre processos na arquitetura
 cliente-servidor.
 
-## Descrição
+## Descrição da atividade
 Implementar um sistema rudimentar bancário de transações financeiras, para
 saque, depósito e transferência de fundos entre contas bancárias. Os
 processos clientes e o servidor devem manter seus relógios lógicos atualizados
 (iniciados com valor 0) e exibir em tela cada mudança de valor dos respectivos
 relógios
 
-## Detalhamento
+## Detalhamento da atividade
 1. As operações de transações financeiras devem estar implementadas no
 lado do servidor, mantendo contas de clientes.
 2. Os clientes devem se conectar ao servidor e solicitar as requisições
@@ -19,7 +25,7 @@ desejadas, ou seja, que tipo de operações financeiras (saldo, retirada e
 transferência, entre contas). Cada ciente do banco terá uma conta-corrente
 vinculada a um número de RG e respectivo nome do cliente.
 
-## Restrições
+## Restrições da atividade
 1. O programa pode ser implementado em linguagens para programação
 desktop em rede, como Python, Java, C, C++ ou C#.
 Obs.: De preferência em Python.
