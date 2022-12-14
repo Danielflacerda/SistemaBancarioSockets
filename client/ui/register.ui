@@ -48,7 +48,7 @@ color: rgb(247, 248, 250);</string>
      </font>
     </property>
     <property name="text">
-     <string>BancoSocketiano</string>
+     <string>BancoSocket</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>

@@ -4,7 +4,7 @@ from data import bank, session_manager
 
 
 class AppController:
-    '''Controlador que processa as requisições dos usuários do BancoSocketiano.
+    '''Controlador que processa as requisições dos usuários do BancoSocket.
 
     Methods
     -------
